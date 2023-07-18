@@ -1,0 +1,453 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script>
+        var loadErrorFound = false;
+        function externalResourceNotFound() {
+            if (!loadErrorFound) {
+                window.alert("Unable to load one or more external web resources needed to display this page.\n\n" +
+                             "Please check/adjust your Internet access and reload this page again.\n\n" +
+                             "Thank you.");
+                loadErrorFound = true;
+            }
+            return false;
+        }
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" onerror="externalResourceNotFound()"/>
+    <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/report/execution_summary.css" onerror="externalResourceNotFound()"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://nexiality.github.io/documentation/assets/report/execution_summary.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://nexiality.github.io/documentation/assets/report/execution_output.js" onerror="externalResourceNotFound()"></script>
+</head>
+<body>
+<div class="title">
+    Execution Summary for <span>20230705_113431</span>
+</div>
+
+<div class="result-controls">
+    <i class="fas fa-toggle-on on" id="script-toggle" onclick="toggleScript(this)" title="toggle the display of only scripts"><span>Scripts</span></i>
+    <i class="fas fa-toggle-on on" id="iteration-toggle" onclick="toggleIteration(this)" title="toggle the display of iterations"><span>Iterations</span></i>
+    <i class="fas fa-toggle-on on" id="scenario-toggle" onclick="toggleScenario(this)" title="toggle the display of scenarios"><span>Scenarios</span></i>
+    <i class="fas fa-toggle-on on" id="activity-toggle" onclick="toggleActivity(this)" title="toggle the display of activities"><span>Activities</span></i>
+    <i class="fas fa-toggle-on on" id="reference-toggle" onclick="toggleRefs(this);" title="toggle the display of script/scenario references"><span>References</span></i>
+    <i class="fas fa-toggle-on on" id="timing-toggle" onclick="toggleTimings(this);" title="toggle the display of execution time"><span>Timing</span></i>
+    <i class="fas fa-toggle-on on" id="passfail-toggle" onclick="togglePassFail(this);" title="toggle the display of PASS/FAIL"><span>PASS/FAIL</span></i>
+    &nbsp;|&nbsp;&nbsp;
+    <i class="fas fa-exclamation-circle off" id="failure-toggle" onclick="collapsePassRows(this);"><span>Failures</span></i>
+    <i class="fas fa-check-circle on" id="all-toggle" onclick="showPassRows(this);"><span>All Results</span></i>
+    &nbsp;|&nbsp;&nbsp;
+    <i class="fas fa-compress on" id="collapse-toggle" onclick="toggleExpansion(this)" title="collapse/expand all sections"><span>Collapse/Expand All</span></i>
+</div>
+
+
+
+<div class="execMeta canHide">
+    <div class="showhide" target="execMeta">
+        <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+        <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+    </div>
+
+    <div id="execMeta" class="parent">
+        <div class="meta">
+            <table class="execMeta" cellpadding="0" cellspacing="0" style="width: 100%">
+                <tbody>
+                    <tr>
+                        <td class="section-header section-env" width="10%"><i class="fas fa-laptop-code"></i></td>
+                        <td class="section-detail detail-env">
+                            <div class="execValue">
+                                <div class="execLabel">run from</div>
+                                <div class="content" style="text-align:left; margin-top:-5px;">ALIPL3205 (amd64 Windows 11 10.0)
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">run user</div>
+                                <div class="content">al5170
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">nexial version</div>
+                                <div class="content">nexial-core dev_0000</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">java version</div>
+                                <div class="content">17.0.5</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" class="section-header section-time"><i class="fas fa-clock"></i></td>
+                        <td class="section-detail detail-time">
+                            <div class="execValue">
+                                <div class="execLabel">starts on</div>
+                                <div class="content">07/05/2023 11:34:32
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">ends on</div>
+                                <div class="content">07/05/2023 11:37:11
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">duration</div>
+                                <div class="content">00:02:39.203
+</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="section-header section-exec"><i class="fas fa-cogs"></i></td>
+                        <td class="section-detail detail-exec">
+                            <div class="execValue">
+                                <div class="execLabel">Scenario Passed</div>
+                                <div class="content">1 / 1
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">Total Steps</div>
+                                <div class="content">   11
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">Executed Steps</div>
+                                <div class="content">11 (100.00%)
+</div>
+                            </div>
+                            <div class="execValue execValuePass">
+                                <div class="execLabel">Passed</div>
+                                <div class="content">11 (100.00%)
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">Failed</div>
+                                <div class="content">0 (0.00%)
+</div>
+                            </div>
+                            <div class="execValue execValueSkipped">
+                                <div class="execLabel">Skipped</div>
+                                <div class="content">0 (0.00%)
+</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="section-header section-ref"><i class="fas fa-file-invoice"></i></td>
+                        <td class="section-detail detail-ref">
+                            <div class="execValue exec-supplemental">
+                                <div class="execLabel">Analysis</div>
+                                <div class="links">
+                                    
+                                        <a href="#recordings" class="supplemental-link">Screen Recordings</a>
+                                        
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="execValue execLog">
+                                <div class="execLabel">Logs</div>
+                                <a href="C:\projects\Humanetics\output\20230705_113431\logs\nexial-20230705_113431.log" target="_nexial_link">nexial-20230705_113431.log</a><br/>
+                            </div>
+                            <div class="execValue execArgs">
+                                <div class="execLabel">Runtime Args</div>
+                                <pre>-script C:\projects\Humanetics\artifact\script\I18N.xlsx</pre>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="chart">
+            <div class="chart-container">
+                <table cellspacing="0" cellpadding="5" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td width="35%"><canvas id="resultsChart"></canvas></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="reset-buttons">
+                <span id="chartInstruction">click on the chart above to drill down</span>
+                <button id="resetResultsChart">Execution</button>&nbsp;&nbsp;
+                <button id="rollUpResultsChart">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="exec-summary">
+
+    
+
+    <div class="exec-summary-header">
+        <table cellspacing="0" cellpadding="5" border="0" width="100%">
+            <tr>
+                <th class="label label-title">Script</th>
+                <th class="label label-title">Data</th>
+                <th class="label label-iteration">Iterations</th>
+                <th class="label label-scenarioPassed">Scenario Passed</th>
+                <th class="label label-datetime exectime">Start Date/Time</th>
+                <th class="label label-time exectime">Duration</th>
+                <th class="label label-num passfail">Total</th>
+                <th class="label label-num passfail">Pass</th>
+                <th class="label label-num passfail">Fail</th>
+                <th class="label label-percent passfail" width="100%">Success %</th>
+            </tr>
+        </table>
+    </div>
+    <div class="planStep canHide" id="planStep1" >
+        <div class="showhide" target="planStep1details">
+            <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+            <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+        </div>
+
+        <div class="plan-step-summary">
+            <table cellspacing="0" cellpadding="5" border="0">
+                <tr class="noFailure">
+                    <td class="value value-title" title="Click to download script">
+                        <a class="fileLink" href="C:\projects\Humanetics\artifact\script\I18N.xlsx">I18N.xlsx</a>
+                        <i class="fas fa-copy" title="copy script location" onclick="copyToClipboard(&#39;C:\\projects\\Humanetics\\artifact\\script\\I18N.xlsx&#39;)"></i>
+                    </td>
+                    <td class="value value-title" title="Click to download data">
+                        <a class="fileLink" href="C:\projects\Humanetics\artifact\data\I18N.data.xlsx">I18N.data.xlsx</a>
+                        <i class="fas fa-copy" title="copy data file location" onclick="copyToClipboard(&#39;C:\\projects\\Humanetics\\artifact\\data\\I18N.data.xlsx&#39;)"></i>
+                    </td>
+                    <td class="value value-iteration">1</td>
+                    <td class="value value-scenarioPassed">1 / 1</td>
+                    <td class="value value-datetime exectime">2023/07/05 11:34:34</td>
+                    <td class="value value-time value-tally exectime">00:02:37</td>
+                    <td class="value value-num value-tally passfail">11</td>
+                    <td class="value value-num value-tally passfail">11</td>
+                    <td class="value value-num value-tally passfail">0</td>
+                    <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="iteration canHide" id="planStep1details">
+            <table cellspacing="0" cellpadding="5" border="0">
+                <tr class="record-header">
+                    <th class="label label-title">Iteration</th>
+                    <th class="label label-title">Scenario</th>
+                    <th class="label label-title">Activity</th>
+                    <th class="label label-scenarioPassed"></th>
+                    <th class="label label-datetime exectime">Start Date/Time</th>
+                    <th class="label label-time exectime">Duration</th>
+                    <th class="label label-num passfail">Total</th>
+                    <th class="label label-num passfail">Pass</th>
+                    <th class="label label-num passfail">Fail</th>
+                    <th class="label label-num passfail">Success %</th>
+                    <th class="label">&nbsp;</th>
+                </tr>
+
+                
+                    <tr class="record iter noFailure">
+                        <td colspan="3" class="value value-title">
+                            <a class="fileLink" title="Click to download result" target="_nexial_link" id="I18N.20230705_113434.001.xlsx" href="C:\projects\Humanetics\output\20230705_113431\I18N.20230705_113434.001.xlsx">Execution Result (1 of 1)</a>
+                            <i class="fas fa-copy" title="copy execution result file location" onclick="copyToClipboard(&#39;C:\\projects\\Humanetics\\output\\20230705_113431\\I18N.20230705_113434.001.xlsx&#39;)"></i>
+                            <div class="value-scriptRef">
+                                <i class="fas fa-info-circle info" title="Reference Data labeled as nexial.scriptRef.*"></i>
+                                <table cellspacing="0" cellpadding="0">
+                                    
+                                        
+                                    
+                                        
+                                            <tr>
+                                                <td class="label-ref" title="DataSheet(s)">DataSheet(s)</td>
+                                                <td class="value-ref" title="#default">#default</td>
+                                            </tr>
+                                        
+                                    
+                                        
+                                    
+                                </table>
+                            </div>
+                        </td>
+                        <td class="value value-scenarioPassed">1 / 1</td>
+                        <td class="value value-datetime exectime">2023/07/05 11:34:34</td>
+                        <td class="value value-time value-tally exectime">00:02:35</td>
+                        <td class="value value-num value-tally passfail">11</td>
+                        <td class="value value-num value-tally passfail">11</td>
+                        <td class="value value-num value-tally passfail">0</td>
+                        <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                    </tr>
+
+                    
+                        <tr class="record scenario noFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="customWebpage">
+                                customWebpage
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2023/07/05 11:34:36</td>
+                            <td class="value value-time value-tally exectime">00:02:32</td>
+                            <td class="value value-num value-tally passfail">11</td>
+                            <td class="value value-num value-tally passfail">11</td>
+                            <td class="value value-num value-tally passfail">0</td>
+                            <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="Start Recording">Start Recording</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2023/07/05 11:34:36</td>
+                                <td class="value value-time exectime">00:00:02</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="I18N Testing">I18N Testing</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2023/07/05 11:34:39</td>
+                                <td class="value value-time exectime">00:02:27</td>
+                                <td class="value value-num passfail">9</td>
+                                <td class="value value-num passfail">9</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="Stop Recording">Stop Recording</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2023/07/05 11:37:07</td>
+                                <td class="value value-time exectime">00:00:02</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">15</td>
+                                                <td class="value step-table-col-width-45" title="recording started" rowspan="1">recording started</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="C:\projects\Humanetics\output\20230705_113431\captures\I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4">
+                                                        <i class="fas file-video-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="recording canHide" id="recordings">
+    <div class="showhide" target="all-recordings">
+        <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+        <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+    </div>
+
+    <div class="section-title">
+        Screen Recordings
+        <a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <div class="canHide" id="all-recordings">
+        
+            <div class="container">
+                <div class="caption">
+                    <div class="caption-title">I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4</div>
+                    <div class="caption-meta">
+                        <a class="link-to-result" href="javascript:scrollToElement(&#39;[id=\&#39;I18N.20230705_113434.001.xlsx\&#39;]&#39;);" title="navigate to corresponding execution result"><i class="fas fa-link"></i></a>
+                        <span class="meta-title">script</span>
+                        <span class="meta-value">I18N</span>
+                        <span class="meta-title">scenario</span>
+                        <span class="meta-value">customWebpage</span>
+                        <span class="meta-title">iteration</span>
+                        <span class="meta-value">001</span>
+                        <span class="meta-title">row</span>
+                        <span class="meta-value">A5</span>
+                    </div>
+                </div>
+                <video width="540" controls>
+                    <source src="captures/I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="footer">powered by <a href="https://nexiality.github.io">NEXIAL</a></div>
+<br/>
+<br/>
+
+<button id="hideLog" target="" title="click to hide display" onclick="hideLog();">Hide</button>
+
+<div id="loadError" style="display:none;font-weight:bold;font-size:16pt;color:#800;background:rgba(230,200,200,0.9);border:5px solid;padding:25px;margin:auto;position:fixed;width:500px;height:175px;top:0;left:0;right:0;bottom:0;">
+    Unable to load one or more external web resources needed to display this page.<br/><br/>
+    Please check/adjust your Internet access and reload this page again.<br/><br/>
+    Thank you.
+</div>
+
+<script>if (loadErrorFound) { document.getElementById('loadError').style.display = 'block'; }</script>
+<script>
+   const executionChart = new ExecutionChart({"name":"20230705_113431","executionLevel":"EXECUTION","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537072717,"endTime":1688537231920,"totalLevelPassed":1,"totalSteps":11,"passCount":11,"failCount":0,"warnCount":0,"skippedCount":0,"executed":11,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{"nexial-20230705_113431.log":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log"},"referenceData":{"Data File":"I18N.data.xlsx","DataSheet(s)":"#default","runtime args":"-script C:\\projects\\Humanetics\\artifact\\script\\I18N.xlsx"},"nestedExecutions":[{"name":"I18N (1)","executionLevel":"SCRIPT","scriptFile":"C:\\projects\\Humanetics\\artifact\\script\\I18N.xlsx","dataFile":"C:\\projects\\Humanetics\\artifact\\data\\I18N.data.xlsx","testScript":null,"testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537074555,"endTime":1688537231654,"totalLevelPassed":1,"totalSteps":11,"passCount":11,"failCount":0,"warnCount":0,"skippedCount":0,"executed":11,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log","logs":{"nexial-20230705_113431.log":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log"},"referenceData":{},"nestedExecutions":[{"name":"1 of 1","executionLevel":"ITERATION","scriptFile":"C:\\projects\\Humanetics\\artifact\\script\\I18N.xlsx","dataFile":null,"testScript":"C:\\projects\\Humanetics\\output\\20230705_113431\\I18N.20230705_113434.001.xlsx","testScriptLink":"C:\\projects\\Humanetics\\output\\20230705_113431\\I18N.20230705_113434.001.xlsx","runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537074555,"endTime":1688537230130,"totalLevelPassed":1,"totalSteps":11,"passCount":11,"failCount":0,"warnCount":0,"skippedCount":0,"executed":11,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log","logs":{"nexial-20230705_113431.log":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log"},"referenceData":{"Data File":"I18N.data.xlsx","DataSheet(s)":"#default","runtime args":"-script C:\\projects\\Humanetics\\artifact\\script\\I18N.xlsx"},"nestedExecutions":[{"name":"customWebpage","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"C:\\projects\\Humanetics\\output\\20230705_113431\\I18N.20230705_113434.001.xlsx","testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537076917,"endTime":1688537229405,"totalLevelPassed":3,"totalSteps":11,"passCount":11,"failCount":0,"warnCount":0,"skippedCount":0,"executed":11,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log","logs":{"nexial-20230705_113431.log":"C:\\projects\\Humanetics\\output\\20230705_113431\\logs\\nexial-20230705_113431.log"},"referenceData":{},"nestedExecutions":[{"name":"Start Recording","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537076917,"endTime":1688537079842,"totalLevelPassed":0,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":2925},{"name":"I18N Testing","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537079842,"endTime":1688537227315,"totalLevelPassed":0,"totalSteps":9,"passCount":9,"failCount":0,"warnCount":0,"skippedCount":0,"executed":9,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":147473},{"name":"Stop Recording","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3205","runHostOs":"amd64 Windows 11 10.0","runUser":"al5170","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1688537227315,"endTime":1688537229405,"totalLevelPassed":0,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"recording started,base,stopRecording(),[],<null>,false,[I18N.20230705_113434.001.xlsx][customWebpage][Stop Recording][STEP  15][base][stopRecording()]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":15,"description":"recording started","nestedMessages":[{"message":"","file":"C:\\projects\\Humanetics\\output\\20230705_113431\\captures\\I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4","fileType":"video"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":2090}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":152488}],"nestMessages":{},"planSequence":0,"iterationIndex":1,"iterationTotal":1,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":155575}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":1,"planName":null,"planFile":null,"planDescription":"Started on 07\/05\/2023 11:34:32 AM from ALIPL3205 via user al5170","screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":157099}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":{"captures\/I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4":{"path":"C:\\projects\\Humanetics\\output\\20230705_113431\\captures\\","repeatUntilLoopIndex":"","file":"I18N.20230705_113434.001.xlsx_customWebpage_A5.mp4","filename":"I18N.20230705_113434.001","planStep":"","scenario":"customWebpage","planName":"","iteration":"001","row":"A5","script":"I18N"}},"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRateString":"100.00%","successRate":1.0,"elapsedTime":159203});
+   executionChart.initializeChart();
+</script>
+
+
+</body>
+</html>

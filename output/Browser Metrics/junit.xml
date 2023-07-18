@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="20230703_162616" timestamp="2023-07-03T16:26:17" time="51.519" tests="24" errors="0">
+  <testsuite id="1" name="Humanetics-browserMetrics" package="Humanetics-browserMetrics" hostname="ALIPL3205" timestamp="2023-07-03T16:26:18" time="49.052" tests="24" errors="0">
+    <properties>
+      <property name="Run From" value="ALIPL3205" />
+      <property name="Run OS" value="amd64 Windows 11 10.0" />
+      <property name="Run User" value="al5170" />
+      <property name="Iteration" value="1 of 1" />
+      <property name="Script" value="Humanetics-browserMetrics.xlsx" />
+      <property name="Logs" value="C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log" />
+      <property name="Data File" value="Humanetics-browserMetrics.data.xlsx" />
+      <property name="DataSheet(s)" value="#default" />
+      <property name="runtime args" value="-script C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx" />
+    </properties>
+    <testcase id="Start Record" name="Start Record" classname="HomePage Navigation" timestamp="2023-07-03T16:26:19" time="48.132">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="Navigation" name="Navigation" classname="HomePage Navigation" timestamp="2023-07-03T16:26:20" time="46.782">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="Safety Tab" name="Safety Tab" classname="HomePage Navigation" timestamp="2023-07-03T16:26:31" time="36.251">
+      <system-out>Total : 5
+Passed: 5
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="Industry Solutions" name="Industry Solutions" classname="HomePage Navigation" timestamp="2023-07-03T16:26:45" time="21.440">
+      <system-out>Total : 7
+Passed: 7
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="AboutUs" name="AboutUs" classname="HomePage Navigation" timestamp="2023-07-03T16:26:56" time="11.220">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="Search Headforms" name="Search Headforms" classname="HomePage Navigation" timestamp="2023-07-03T16:26:59" time="7.660">
+      <system-out>Total : 4
+Passed: 4
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+    <testcase id="Stop Record" name="Stop Record" classname="HomePage Navigation" timestamp="2023-07-03T16:27:04" time="2.481">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_162616\logs\nexial-20230703_162616.log</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

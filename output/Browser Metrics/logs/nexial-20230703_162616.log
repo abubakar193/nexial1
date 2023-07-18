@@ -1,0 +1,239 @@
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) nexial-core dev_0000 starting up...
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) data file resolved as C:\Users\al5170\tmp\UpyIh\Humanetics-browserMetrics.data.xlsx
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) input files and output directory resolved...
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) cleaning up outdated temp files...
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) No predefined nexial-setup found
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) re-fetching data from C:\projects\Humanetics\artifact\data\Humanetics-browserMetrics.data.xlsx
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) [20230703_162616] [C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx] resolve RUN ID as 20230703_162616
+2023-07-03 16:26:17.382|I|Thread-1|(DELAYED) [20230703_162616] [C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx] new thread started
+2023-07-03 16:26:17.382|I|Thread-1|No predefined nexial-setup found
+2023-07-03 16:26:17.751|I|Thread-1|outputBase not set; output-to-cloud DISABLED!
+2023-07-03 16:26:17.751|I|Thread-1|accessKey not set; output-to-cloud DISABLED!
+2023-07-03 16:26:17.751|I|Thread-1|secretKey not set; output-to-cloud DISABLED!
+2023-07-03 16:26:17.945|I|Thread-1|missing REQUIRED configuration; sms DISABLED!
+2023-07-03 16:26:18.381|I|Thread-1|On-Demand Inspection detection enabled
+2023-07-03 16:26:18.381|I|Thread-1|[20230703_162616] executing C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx with 1 iteration(s)
+2023-07-03 16:26:18.381|I|Thread-1|[20230703_162616] create directory C:\projects\Humanetics\output\20230703_162616\captures
+2023-07-03 16:26:18.381|I|Thread-1|[20230703_162616] create directory C:\projects\Humanetics\output\20230703_162616\logs
+2023-07-03 16:26:18.641|I|Thread-1|[20230703_162616] merging test data to tmp file C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+2023-07-03 16:26:18.641|I|Thread-1|re-fetching data from C:\projects\Humanetics\artifact\data\Humanetics-browserMetrics.data.xlsx
+2023-07-03 16:26:18.882|I|Thread-1|[20230703_162616] test script and test data merged to C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+2023-07-03 16:26:19.271|I|Thread-1|STARTS
+2023-07-03 16:26:19.301|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001 - executing iteration #1 of 1; Iteration Id 1
+2023-07-03 16:26:19.301|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation - executing test scenario
+2023-07-03 16:26:19.301|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Start Record - executing activity
+2023-07-03 16:26:19.312|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Start Record|#  5|base.startRecording()     - executing startRecording()()
+2023-07-03 16:26:19.966|I|Thread-1|[ROW 5] start recording to 'C:\projects\Humanetics\output\20230703_162616\captures\Humanetics-browserMetrics.20230703_162618.001.xlsx_HomePage_Navigation_A5.mp4'
+2023-07-03 16:26:20.511|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Start Record|#  5|base.startRecording()     - PASS desktop recording started; saved C:\projects\Humanetics\output\20230703_162616\captures\Humanetics-browserMetrics.20230703_162618.001.xlsx_HomePage_Navigation_A5.mp4
+2023-07-03 16:26:20.651|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Start Record - ending activity
+2023-07-03 16:26:20.651|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation - executing activity
+2023-07-03 16:26:20.651|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  6|web.openAndWait(url,waitM - executing openAndWait(url,waitMs)(${URL}, ${Wait})
+2023-07-03 16:26:20.651|I|Thread-1|[chrome] initializing chrome
+2023-07-03 16:26:20.702|I|Thread-1|[chrome] enabling chrome remote port: 7942
+2023-07-03 16:26:21.750|I|Thread-1|[chrome] initializing for chrome 114.0.5735.199
+2023-07-03 16:26:21.757|I|Thread-1|[DISPLAY] Currently discovered display(s):
+2023-07-03 16:26:21.765|I|Thread-1|	1920x1080x32bpp@60Hz
+2023-07-03 16:26:21.766|I|Thread-1|[DISPLAY] adjust position to display 1920x1080x32bpp@60Hz
+2023-07-03 16:26:21.773|I|Thread-1|[DISPLAY] adjusting position within the bounds of target display: x=0,y=0,width=1280,height=720
+2023-07-03 16:26:21.773|I|Thread-1|[DISPLAY] position adjusted to (0, 0)
+2023-07-03 16:26:21.897|I|Thread-1|[chrome] browser initialization completed for 'chrome'
+2023-07-03 16:26:21.902|I|Thread-1|[chrome] setting browser page load timeout to 15000 ms
+2023-07-03 16:26:21.902|I|Thread-1|[chrome] detected nexial.web.alwaysWait; use fluent-wait (up to 1500 ms) during web automation
+2023-07-03 16:26:22.521|I|Thread-1|JsEventStartTime: 1688381782521
+2023-07-03 16:26:27.595|I|Thread-1|JsEventEndTime: 1688381787594
+2023-07-03 16:26:27.648|I|Thread-1|web metrics collection enabled and will be saved to C:\projects\Humanetics\output\20230703_162616\browser-metrics.json
+2023-07-03 16:26:29.520|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  6|web.openAndWait(url,waitM - PASS opened URL https://www.humaneticsgroup.com/
+2023-07-03 16:26:29.674|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  7|web.maximizeWindow()      - executing maximizeWindow()()
+2023-07-03 16:26:30.445|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  7|web.maximizeWindow()      - PASS browser window maximized
+2023-07-03 16:26:30.446|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  8|web.assertElementPresent( - executing assertElementPresent(locator)(${HumansTitle})
+2023-07-03 16:26:31.180|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation|#  8|web.assertElementPresent( - PASS EXPECTED element '//strong[text()='HUMANS']' found
+2023-07-03 16:26:31.181|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Navigation - ending activity
+2023-07-03 16:26:31.182|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab - executing activity
+2023-07-03 16:26:31.182|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|#  9|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SafetyLoc}, ${Wait})
+2023-07-03 16:26:31.885|I|Thread-1|clicking '(//a[@class='safety'])[1]'...
+2023-07-03 16:26:31.904|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:31.912|I|Thread-1|JsEventStartTime: 1688381791910
+2023-07-03 16:26:33.135|I|Thread-1|clicked -> true
+2023-07-03 16:26:33.136|I|Thread-1|JsEventEndTime: 1688381793135
+2023-07-03 16:26:35.395|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|#  9|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[@class='safety'])[1]'
+2023-07-03 16:26:35.443|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 10|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${THOR-5FLoc}, ${Wait})
+2023-07-03 16:26:36.163|I|Thread-1|clicking '//a[text()='Discover THOR-5F']'...
+2023-07-03 16:26:36.182|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:36.192|I|Thread-1|JsEventStartTime: 1688381796192
+2023-07-03 16:26:37.154|I|Thread-1|clicked -> true
+2023-07-03 16:26:37.154|I|Thread-1|JsEventEndTime: 1688381797154
+2023-07-03 16:26:39.488|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 10|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='Discover THOR-5F']'
+2023-07-03 16:26:39.500|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 11|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${THOR-5F-ProductPage}, ${Wait})
+2023-07-03 16:26:40.226|I|Thread-1|clicking '//a[text()='THOR-5F Product Page']'...
+2023-07-03 16:26:40.253|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:40.262|I|Thread-1|JsEventStartTime: 1688381800262
+2023-07-03 16:26:41.345|I|Thread-1|clicked -> true
+2023-07-03 16:26:41.346|I|Thread-1|JsEventEndTime: 1688381801346
+2023-07-03 16:26:41.436|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 11|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='THOR-5F Product Page']'
+2023-07-03 16:26:41.445|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 12|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${GenderBiasArticle}, ${Wait})
+2023-07-03 16:26:42.138|I|Thread-1|clicking '//a[text()='Gender Bias Article']'...
+2023-07-03 16:26:42.149|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:42.155|I|Thread-1|JsEventStartTime: 1688381802155
+2023-07-03 16:26:43.130|I|Thread-1|clicked -> true
+2023-07-03 16:26:43.130|I|Thread-1|JsEventEndTime: 1688381803130
+2023-07-03 16:26:43.208|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 12|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='Gender Bias Article']'
+2023-07-03 16:26:43.225|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 13|web.assertElementPresent( - executing assertElementPresent(locator)(${GenderBiasTitle})
+2023-07-03 16:26:45.993|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab|# 13|web.assertElementPresent( - PASS EXPECTED element '//div[@class='paragraph-heading color--white text-transform--none']' found
+2023-07-03 16:26:45.993|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Safety Tab - ending activity
+2023-07-03 16:26:45.993|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions - executing activity
+2023-07-03 16:26:45.994|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 14|web.mouseOver(locator)    - executing mouseOver(locator)(${IndustryLoc})
+2023-07-03 16:26:46.836|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 14|web.mouseOver(locator)    - PASS mouse-over on '(//a[text()='Industry Solutions'])[1]'
+2023-07-03 16:26:46.846|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 15|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${AeroSpaceLoc}, ${Wait})
+2023-07-03 16:26:47.543|I|Thread-1|clicking '(//a[text()='Aerospace Safety'])[1]'...
+2023-07-03 16:26:47.558|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:47.563|I|Thread-1|JsEventStartTime: 1688381807563
+2023-07-03 16:26:48.484|I|Thread-1|clicked -> true
+2023-07-03 16:26:48.484|I|Thread-1|JsEventEndTime: 1688381808484
+2023-07-03 16:26:50.635|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 15|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[text()='Aerospace Safety'])[1]'
+2023-07-03 16:26:50.648|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 16|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${HeadFormLoc}, ${Wait})
+2023-07-03 16:26:51.396|I|Thread-1|clicking '//a[text()='FOCUS Headform']'...
+2023-07-03 16:26:51.416|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:51.426|I|Thread-1|JsEventStartTime: 1688381811426
+2023-07-03 16:26:52.433|I|Thread-1|clicked -> true
+2023-07-03 16:26:52.434|I|Thread-1|JsEventEndTime: 1688381812433
+2023-07-03 16:26:52.596|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 16|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='FOCUS Headform']'
+2023-07-03 16:26:52.632|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 17|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${ApplicationLoc}, ${Wait})
+2023-07-03 16:26:53.445|I|Thread-1|clicking '//summary[text()='Applications']'...
+2023-07-03 16:26:53.478|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:53.482|I|Thread-1|JsEventStartTime: 1688381813482
+2023-07-03 16:26:53.502|I|Thread-1|clicked -> true
+2023-07-03 16:26:53.502|I|Thread-1|JsEventEndTime: 1688381813502
+2023-07-03 16:26:53.595|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 17|web.clickAndWait(locator, - PASS clicked-and-waited '//summary[text()='Applications']'
+2023-07-03 16:26:53.602|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 18|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${RegulationsLoc}, ${Wait})
+2023-07-03 16:26:54.381|I|Thread-1|clicking '//summary[text()='Regulations']'...
+2023-07-03 16:26:54.412|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:54.426|I|Thread-1|JsEventStartTime: 1688381814425
+2023-07-03 16:26:54.444|I|Thread-1|clicked -> true
+2023-07-03 16:26:54.444|I|Thread-1|JsEventEndTime: 1688381814444
+2023-07-03 16:26:54.556|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 18|web.clickAndWait(locator, - PASS clicked-and-waited '//summary[text()='Regulations']'
+2023-07-03 16:26:54.568|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 19|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${ResourcesLoc}, ${Wait})
+2023-07-03 16:26:55.312|I|Thread-1|clicking '//strong[text()='Resources']'...
+2023-07-03 16:26:55.342|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:55.356|I|Thread-1|JsEventStartTime: 1688381815356
+2023-07-03 16:26:55.382|I|Thread-1|clicked -> true
+2023-07-03 16:26:55.382|I|Thread-1|JsEventEndTime: 1688381815382
+2023-07-03 16:26:55.472|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 19|web.clickAndWait(locator, - PASS clicked-and-waited '//strong[text()='Resources']'
+2023-07-03 16:26:55.482|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 20|web.assertElementPresent( - executing assertElementPresent(locator)(${ProductCatalogLoc})
+2023-07-03 16:26:56.212|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions|# 20|web.assertElementPresent( - PASS EXPECTED element '(//strong[text()='Product Catalog'])[2]' found
+2023-07-03 16:26:56.213|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Industry Solutions - ending activity
+2023-07-03 16:26:56.213|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs - executing activity
+2023-07-03 16:26:56.213|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 21|web.mouseOver(locator)    - executing mouseOver(locator)(${AboutUsLoc})
+2023-07-03 16:26:57.059|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 21|web.mouseOver(locator)    - PASS mouse-over on '(//a[text()='About Us'])[1]'
+2023-07-03 16:26:57.072|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 22|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${HistoryLoc}, ${Wait})
+2023-07-03 16:26:57.801|I|Thread-1|clicking '(//a[text()='History'])[1]'...
+2023-07-03 16:26:57.820|I|Thread-1|click target via JS, @id=
+2023-07-03 16:26:57.828|I|Thread-1|JsEventStartTime: 1688381817828
+2023-07-03 16:26:58.861|I|Thread-1|clicked -> true
+2023-07-03 16:26:58.861|I|Thread-1|JsEventEndTime: 1688381818861
+2023-07-03 16:26:58.987|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 22|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[text()='History'])[1]'
+2023-07-03 16:26:59.002|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 23|web.assertElementPresent( - executing assertElementPresent(locator)(${HistoryTitle})
+2023-07-03 16:26:59.771|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs|# 23|web.assertElementPresent( - PASS EXPECTED element '//div[@id='paragraph-heading-370']' found
+2023-07-03 16:26:59.772|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|AboutUs - ending activity
+2023-07-03 16:26:59.773|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms - executing activity
+2023-07-03 16:26:59.774|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 24|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SearchLoc}, ${Wait})
+2023-07-03 16:27:00.491|I|Thread-1|clicking '(//button[@id='edit-submit-search'])[1]'...
+2023-07-03 16:27:00.510|I|Thread-1|click target via JS, @id=edit-submit-search
+2023-07-03 16:27:00.517|I|Thread-1|JsEventStartTime: 1688381820517
+2023-07-03 16:27:00.532|I|Thread-1|clicked -> true
+2023-07-03 16:27:00.532|I|Thread-1|JsEventEndTime: 1688381820532
+2023-07-03 16:27:00.617|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 24|web.clickAndWait(locator, - PASS clicked-and-waited '(//button[@id='edit-submit-search'])[1]'
+2023-07-03 16:27:00.632|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 25|web.type(locator,value)   - executing type(locator,value)(${SeachbarLoc}, ${Search Value})
+2023-07-03 16:27:01.505|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 25|web.type(locator,value)   - PASS typed text at '(//input[@name='sq'])[1]'
+2023-07-03 16:27:01.518|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 26|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SearchLoc}, ${Wait})
+2023-07-03 16:27:02.243|I|Thread-1|clicking '(//button[@id='edit-submit-search'])[1]'...
+2023-07-03 16:27:02.262|I|Thread-1|click target via JS, @id=edit-submit-search
+2023-07-03 16:27:02.281|I|Thread-1|JsEventStartTime: 1688381822278
+2023-07-03 16:27:04.094|I|Thread-1|clicked -> true
+2023-07-03 16:27:04.095|I|Thread-1|JsEventEndTime: 1688381824094
+2023-07-03 16:27:04.180|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 26|web.clickAndWait(locator, - PASS clicked-and-waited '(//button[@id='edit-submit-search'])[1]'
+2023-07-03 16:27:04.197|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 27|web.assertElementPresent( - executing assertElementPresent(locator)(${SearchTitle})
+2023-07-03 16:27:04.950|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms|# 27|web.assertElementPresent( - PASS EXPECTED element '//h1[text()='Search']' found
+2023-07-03 16:27:04.952|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Search Headforms - ending activity
+2023-07-03 16:27:04.952|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Stop Record - executing activity
+2023-07-03 16:27:04.952|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Stop Record|# 28|base.stopRecording()      - executing stopRecording()()
+2023-07-03 16:27:05.559|I|Thread-1|stopping currently in-progress desktop recording...
+2023-07-03 16:27:06.574|I|Thread-1|stopping screen recording service...
+2023-07-03 16:27:06.887|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Stop Record|# 28|base.stopRecording()      - PASS previous desktop recording saved and is accessible via C:\projects\Humanetics\output\20230703_162616\captures\Humanetics-browserMetrics.20230703_162618.001.xlsx_HomePage_Navigation_A5.mp4
+2023-07-03 16:27:06.887|I|Thread-1|Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation|Stop Record - ending activity
+2023-07-03 16:27:07.262|I|Thread-1|[Humanetics-browserMetrics.20230703_162618.001|HomePage Navigation] saving test scenario
+2023-07-03 16:27:07.433|I|Thread-1|[20230703_162616] 
+/-ITERATION COMPLETE------------------------------------------------------------
+| Test Output:    C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+| Iteration:      1
+\-------------------------------------------------------------------------------
+» Execution Time: 48122 ms
+» Test Steps:     24
+» Error(s):       0
+
+
+
+2023-07-03 16:27:08.622|I|Thread-1|[20230703_162616] 
+/-SCRIPT COMPLETE---------------------------------------------------------------
+| Test Script:    C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx
+\-------------------------------------------------------------------------------
+» Execution Time: 51378 ms
+» Iterations:     [1] total 1
+» Test Steps:     24
+» Passed:         24
+» Error(s):       0
+» Iteration 1 of 1: C:\projects\Humanetics\output\20230703_162616\Humanetics-browserMetrics.20230703_162618.001.xlsx
+
+
+
+2023-07-03 16:27:08.622|I|Thread-1|nexial mailer not enabled: nexial.enableEmail=false
+2023-07-03 16:27:08.650|I|main|[20230703_162616] [C:\projects\Humanetics\artifact\script\Humanetics-browserMetrics.xlsx] now completed
+2023-07-03 16:27:08.650|I|main|[20230703_162616] all execution thread(s) have terminated
+2023-07-03 16:27:08.651|I|main|[20230703_162616] test run completed in about 52 seconds
+2023-07-03 16:27:08.732|I|main|No predefined nexial-setup found
+2023-07-03 16:27:08.752|I|main|outputBase not set; output-to-cloud DISABLED!
+2023-07-03 16:27:08.752|I|main|accessKey not set; output-to-cloud DISABLED!
+2023-07-03 16:27:08.762|I|main|secretKey not set; output-to-cloud DISABLED!
+2023-07-03 16:27:08.762|I|main|generating HTML output for this execution to C:\projects\Humanetics\output\20230703_162616\execution-output.html
+2023-07-03 16:27:09.952|I|main|generating JUnit XML output for this execution to C:\projects\Humanetics\output\20230703_162616\junit.xml
+2023-07-03 16:27:10.007|I|main|generated the JUnit report for this execution: C:\projects\Humanetics\output\20230703_162616\junit.xml
+2023-07-03 16:27:10.032|I|main|Quantitative metrics enabled 
+2023-07-03 16:27:13.012|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\img
+2023-07-03 16:27:13.012|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\img\accionlabs-logo.f4f8aee8.png
+2023-07-03 16:27:13.012|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\img\earth.3f7d4abb.jpg
+2023-07-03 16:27:13.026|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\index.html
+2023-07-03 16:27:13.026|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\js
+2023-07-03 16:27:13.026|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\js\chunk-vendors.0f47f2c1.js
+2023-07-03 16:27:13.037|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\js\index.0f9715b2.js
+2023-07-03 16:27:13.042|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\js\chunk-vendors.0f47f2c1.js.map
+2023-07-03 16:27:13.062|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\js\index.0f9715b2.js.map
+2023-07-03 16:27:13.062|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\css
+2023-07-03 16:27:13.072|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\css\index.9b363a0b.css
+2023-07-03 16:27:13.072|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\css\chunk-vendors.bf9c05a4.css
+2023-07-03 16:27:13.082|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_162616\quantitative-user-metrics\favicon_accion.ico
+2023-07-03 16:27:13.122|I|main|nexial mailer not enabled: nexial.enableEmail=false
+2023-07-03 16:27:13.122|I|main|skipped email notification as configured
+2023-07-03 16:27:13.122|I|main|exiting current script/plan execution
+2023-07-03 16:27:13.122|I|main|exiting Nexial...
+2023-07-03 16:27:13.122|I|main|shutdown starts...
+2023-07-03 16:27:13.122|I|main|stopping screen recording service...
+2023-07-03 16:27:13.122|I|main|[chrome] Shutting down webdriver...
+2023-07-03 16:27:13.122|I|main|[chrome] Close the current window...
+2023-07-03 16:27:13.222|I|main|[chrome] Quit this driver, closing every associated window.
+2023-07-03 16:27:14.366|I|main|shutdown ends...
+2023-07-03 16:27:14.372|I|main|
+
+/-END OF EXECUTION--------------------------------------------------------------
+| » Execution Time: 51 sec.
+| » Test Steps....: 24
+| » Passed........: 24
+| » Failed........: 0
+| » Success Rate..: 100.00%
+\----------------------------------------------------------nexial-core dev_0000-
+
+2023-07-03 16:27:14.372|I|main|ALL PASSED!
+2023-07-03 16:27:14.382|I|main|End of Execution:
+NEXIAL_OUTPUT:         C:\projects\Humanetics\output\20230703_162616
+NEXIAL_EXECUTION_HTML: C:\projects\Humanetics\output\20230703_162616\execution-output.html
+NEXIAL_JUNIT_XML:      C:\projects\Humanetics\output\20230703_162616\junit.xml
+NEXIAL_SUCCESS_RATE:   100.00%
+NEXIAL_EXIT_STATUS:    0

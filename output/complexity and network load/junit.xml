@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="20230703_163531" timestamp="2023-07-03T16:35:32" time="258.121" tests="24" errors="0">
+  <testsuite id="1" name="Humanetics-complexity-network" package="Humanetics-complexity-network" hostname="ALIPL3205" timestamp="2023-07-03T16:35:34" time="253.352" tests="24" errors="0">
+    <properties>
+      <property name="Run From" value="ALIPL3205" />
+      <property name="Run OS" value="amd64 Windows 11 10.0" />
+      <property name="Run User" value="al5170" />
+      <property name="Iteration" value="1 of 1" />
+      <property name="Script" value="Humanetics-complexity-network.xlsx" />
+      <property name="Logs" value="C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log" />
+      <property name="Data File" value="Humanetics-complexity-network.data.xlsx" />
+      <property name="DataSheet(s)" value="#default" />
+      <property name="runtime args" value="-script C:\projects\Humanetics\artifact\script\Humanetics-complexity-network.xlsx" />
+    </properties>
+    <testcase id="Start Record" name="Start Record" classname="HomePage Navigation" timestamp="2023-07-03T16:35:36" time="251.152">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="Navigation" name="Navigation" classname="HomePage Navigation" timestamp="2023-07-03T16:35:47" time="240.988">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="Safety Tab" name="Safety Tab" classname="HomePage Navigation" timestamp="2023-07-03T16:36:16" time="211.158">
+      <system-out>Total : 5
+Passed: 5
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="Industry Solutions" name="Industry Solutions" classname="HomePage Navigation" timestamp="2023-07-03T16:37:18" time="149.873">
+      <system-out>Total : 7
+Passed: 7
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="AboutUs" name="AboutUs" classname="HomePage Navigation" timestamp="2023-07-03T16:38:32" time="75.189">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="Search Headforms" name="Search Headforms" classname="HomePage Navigation" timestamp="2023-07-03T16:39:01" time="46.857">
+      <system-out>Total : 4
+Passed: 4
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+    <testcase id="Stop Record" name="Stop Record" classname="HomePage Navigation" timestamp="2023-07-03T16:39:40" time="7.865">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_163531\Humanetics-complexity-network.20230703_163534.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_163531\logs\nexial-20230703_163531.log</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

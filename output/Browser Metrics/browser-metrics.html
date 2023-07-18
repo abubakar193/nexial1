@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="http://nexiality.github.io/documentation/favicon.ico">
+  <script>
+    let loadErrorFound = false;
+
+    function externalResourceNotFound() {
+      if (!loadErrorFound) {
+        window.alert("Unable to load one or more external web resources needed to display this page.\n\n" +
+                     "Please check/adjust your Internet access and reload this page again.\n\n" +
+                     "Thank you.");
+        loadErrorFound = true;
+      }
+      return false;
+    }
+  </script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" onerror="externalResourceNotFound()"/>
+  <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/project/datatables.min.css" onerror="externalResourceNotFound()"/>
+  <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/project/w2ui-1.5.rc1.min.css" onerror="externalResourceNotFound()"/>
+  <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/report/execution_summary.css" onerror="externalResourceNotFound()"/>
+  <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/metrics/browser-metric.glossygreen.css" onerror="externalResourceNotFound()"/>
+
+  <script src="https://nexiality.github.io/documentation/assets/project/datatables.min.js" onerror="externalResourceNotFound()"></script>
+  <script src="https://nexiality.github.io/documentation/assets/project/w2ui-1.5.rc1.min.js" onerror="externalResourceNotFound()"></script>
+  <script src="https://nexiality.github.io/documentation/assets/project/chart.min.js" onerror="externalResourceNotFound()"></script>
+  <script src="https://nexiality.github.io/documentation/assets/report/execution_summary.js" onerror="externalResourceNotFound()"></script>
+  <script src="https://nexiality.github.io/documentation/assets/metrics/browser-metrics.js" onerror="externalResourceNotFound()"></script>
+  <title>Browser Performance Metrics</title>
+</head>
+<body>
+<div class="title">
+  <div>Browser Performance Metrics</div>
+</div>
+
+<div class="result-controls">
+  <i class="fas fa-compress on" id="collapse-toggle" onclick="toggleExpansion(this)" title="collapse/expand all sections"><span>Collapse/Expand All</span></i>
+</div>
+
+<div id="app">
+</div>
+
+<div id="chart_popup" style="display:none;">
+  <div rel="title">Visualization</div>
+  <div rel="body">
+    <canvas id="metrics_chart" class="metrics_chart"></canvas>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="footer">powered by <a href="https://nexiality.github.io">NEXIAL</a></div>
+<br/>
+<br/>
+
+<div id="loadError" style="display:none;font-weight:bold;font-size:16pt;color:#800;background:rgba(230,200,200,0.9);border:5px solid;padding:25px;margin:auto;position:fixed;width:500px;height:175px;top:0;left:0;right:0;bottom:0;">
+  Unable to load one or more external web resources needed to display this page.<br/><br/>
+  Please check/adjust your Internet access and reload this page again.<br/><br/>
+  Thank you.
+</div>
+
+<script>
+  if (loadErrorFound) { document.getElementById('loadError').style.display = 'block'; }
+
+  let metrics        = {
+  "runID": "20230703_162616",
+  "project": "Humanetics",
+  "scripts": [
+    {
+      "name": "Humanetics-browserMetrics.001",
+      "scenarios": [
+        {
+          "name": "HomePage Navigation",
+          "activities": [
+            {
+              "name": "Navigation",
+              "steps": [
+                {
+                  "ContentDownload": 513.7,
+                  "DomInteractive": 1813.8,
+                  "FirstInteractive": 501.9,
+                  "FirstResponseTime": 372.6,
+                  "Latency": 797.6,
+                  "NetworkOverhead": 424.3,
+                  "PageCompleteTime": 4945,
+                  "PageReady": 3131.2,
+                  "TTFB": 798.2,
+                  "TTLB": 1311.9,
+                  "row": "6",
+                  "description": "Navigate to Humanetics website",
+                  "command": "web » openAndWait(url,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/openAndWait(url,waitMs)",
+                  "parameters": [
+                    "https://www.humaneticsgroup.com/",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 513.7,
+                  "DomInteractive": 1813.8,
+                  "FirstInteractive": 501.9,
+                  "FirstResponseTime": 372.6,
+                  "Latency": 797.6,
+                  "NetworkOverhead": 424.3,
+                  "PageCompleteTime": 4945,
+                  "PageReady": 3131.2,
+                  "TTFB": 798.2,
+                  "TTLB": 1311.9,
+                  "row": "7",
+                  "description": "Maximize the window",
+                  "command": "web » maximizeWindow()",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/maximizeWindow()",
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "name": "Safety Tab",
+              "steps": [
+                {
+                  "ContentDownload": 308.3,
+                  "DomInteractive": 1183.5,
+                  "FirstInteractive": 256.9,
+                  "FirstResponseTime": 615.5,
+                  "Latency": 616.3,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 1183.5,
+                  "TTFB": 618.3,
+                  "TTLB": 926.6,
+                  "row": "9",
+                  "description": "Clicking on Safety tab",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "(//a[@class='safety'])[1]",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 253.5,
+                  "DomInteractive": 914.4,
+                  "FirstInteractive": 73.4,
+                  "FirstResponseTime": 581.1,
+                  "Latency": 581.7,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 914.4,
+                  "TTFB": 587.5,
+                  "TTLB": 841,
+                  "row": "10",
+                  "description": "Clicking on 'Discover THOR-5F'",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//a[text()='Discover THOR-5F']",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 266.2,
+                  "DomInteractive": 1000.7,
+                  "FirstInteractive": 157.4,
+                  "FirstResponseTime": 574.4,
+                  "Latency": 574.9,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 1000.7,
+                  "TTFB": 577.1,
+                  "TTLB": 843.3,
+                  "row": "11",
+                  "description": "Clicking on THOR-5F Product Page",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//a[text()='THOR-5F Product Page']",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 242.9,
+                  "DomInteractive": 924.5,
+                  "FirstInteractive": 48.2,
+                  "FirstResponseTime": 626.3,
+                  "Latency": 627.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 924.5,
+                  "TTFB": 633.4,
+                  "TTLB": 876.3,
+                  "row": "12",
+                  "description": "Clicking on Gender Bias Article",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//a[text()='Gender Bias Article']",
+                    "6000"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Industry Solutions",
+              "steps": [
+                {
+                  "ContentDownload": 242.9,
+                  "DomInteractive": 924.5,
+                  "FirstInteractive": 48.2,
+                  "FirstResponseTime": 626.3,
+                  "Latency": 627.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 2305.7,
+                  "PageReady": 1381.2,
+                  "TTFB": 633.4,
+                  "TTLB": 876.3,
+                  "row": "14",
+                  "description": "MouseOver on Indusrty solutions tab",
+                  "command": "web » mouseOver(locator)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/mouseOver(locator)",
+                  "parameters": [
+                    "(//a[text()='Industry Solutions'])[1]"
+                  ]
+                },
+                {
+                  "ContentDownload": 240.8,
+                  "DomInteractive": 887.1,
+                  "FirstInteractive": 36.3,
+                  "FirstResponseTime": 607.6,
+                  "Latency": 608.2,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 887.1,
+                  "TTFB": 610,
+                  "TTLB": 850.8,
+                  "row": "15",
+                  "description": "Clicking on Aero Space Safety tab",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "(//a[text()='Aerospace Safety'])[1]",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 261.4,
+                  "DomInteractive": 939.8,
+                  "FirstInteractive": 77.9,
+                  "FirstResponseTime": 593.9,
+                  "Latency": 595.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 939.8,
+                  "TTFB": 600.5,
+                  "TTLB": 861.9,
+                  "row": "16",
+                  "description": "Clicking on Head Form tab",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//a[text()='FOCUS Headform']",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 261.4,
+                  "DomInteractive": 939.8,
+                  "FirstInteractive": 77.9,
+                  "FirstResponseTime": 593.9,
+                  "Latency": 595.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1264.5,
+                  "PageReady": 324.7,
+                  "TTFB": 600.5,
+                  "TTLB": 861.9,
+                  "row": "17",
+                  "description": "Clicking on Application button",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//summary[text()='Applications']",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 261.4,
+                  "DomInteractive": 939.8,
+                  "FirstInteractive": 77.9,
+                  "FirstResponseTime": 593.9,
+                  "Latency": 595.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1264.5,
+                  "PageReady": 324.7,
+                  "TTFB": 600.5,
+                  "TTLB": 861.9,
+                  "row": "18",
+                  "description": "Clicking on Regulation button",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//summary[text()='Regulations']",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 261.4,
+                  "DomInteractive": 939.8,
+                  "FirstInteractive": 77.9,
+                  "FirstResponseTime": 593.9,
+                  "Latency": 595.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1264.5,
+                  "PageReady": 324.7,
+                  "TTFB": 600.5,
+                  "TTLB": 861.9,
+                  "row": "19",
+                  "description": "Clicking on Resources Tab",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "//strong[text()='Resources']",
+                    "6000"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AboutUs",
+              "steps": [
+                {
+                  "ContentDownload": 261.4,
+                  "DomInteractive": 939.8,
+                  "FirstInteractive": 77.9,
+                  "FirstResponseTime": 593.9,
+                  "Latency": 595.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1264.5,
+                  "PageReady": 324.7,
+                  "TTFB": 600.5,
+                  "TTLB": 861.9,
+                  "row": "21",
+                  "description": "MouseOver on AboutUs tab",
+                  "command": "web » mouseOver(locator)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/mouseOver(locator)",
+                  "parameters": [
+                    "(//a[text()='About Us'])[1]"
+                  ]
+                },
+                {
+                  "ContentDownload": 254.3,
+                  "DomInteractive": 893.3,
+                  "FirstInteractive": 55.6,
+                  "FirstResponseTime": 578.5,
+                  "Latency": 579.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 893.3,
+                  "TTFB": 583.4,
+                  "TTLB": 837.7,
+                  "row": "22",
+                  "description": "Clicking on History",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "(//a[text()='History'])[1]",
+                    "6000"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Search Headforms",
+              "steps": [
+                {
+                  "ContentDownload": 254.3,
+                  "DomInteractive": 893.3,
+                  "FirstInteractive": 55.6,
+                  "FirstResponseTime": 578.5,
+                  "Latency": 579.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1148.1,
+                  "PageReady": 254.8,
+                  "TTFB": 583.4,
+                  "TTLB": 837.7,
+                  "row": "24",
+                  "description": "Clicking on Search button",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "(//button[@id='edit-submit-search'])[1]",
+                    "6000"
+                  ]
+                },
+                {
+                  "ContentDownload": 254.3,
+                  "DomInteractive": 893.3,
+                  "FirstInteractive": 55.6,
+                  "FirstResponseTime": 578.5,
+                  "Latency": 579.1,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 1148.1,
+                  "PageReady": 254.8,
+                  "TTFB": 583.4,
+                  "TTLB": 837.7,
+                  "row": "25",
+                  "description": "Entering value in search bar",
+                  "command": "web » type(locator,value)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/type(locator,value)",
+                  "parameters": [
+                    "(//input[@name='sq'])[1]",
+                    "Headforms"
+                  ]
+                },
+                {
+                  "ContentDownload": 247,
+                  "DomInteractive": 1773.4,
+                  "FirstInteractive": 0.6,
+                  "FirstResponseTime": 1516.8,
+                  "Latency": 1517.5,
+                  "NetworkOverhead": 0,
+                  "PageCompleteTime": 0,
+                  "PageReady": 1773.4,
+                  "TTFB": 1525.8,
+                  "TTLB": 1772.8,
+                  "row": "26",
+                  "description": "Click for search",
+                  "command": "web » clickAndWait(locator,waitMs)",
+                  "command-ref": "http://nexiality.github.io/documentation/commands/web/clickAndWait(locator,waitMs)",
+                  "parameters": [
+                    "(//button[@id='edit-submit-search'])[1]",
+                    "6000"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "browser": "Chrome 114.0.0.0",
+  "os": "Windows 10"
+};
+  let browserMetrics = new BrowserMetrics(metrics);
+
+  $(document).ready(function () {
+    browserMetrics.renderExecMeta();
+    browserMetrics.renderMetrics();
+  });
+</script>
+</body>
+</html>

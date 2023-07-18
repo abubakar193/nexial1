@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="20230703_164208" timestamp="2023-07-03T16:42:08" time="262.162" tests="24" errors="0">
+  <testsuite id="1" name="Humanetics-wcag" package="Humanetics-wcag" hostname="ALIPL3205" timestamp="2023-07-03T16:42:10" time="259.726" tests="24" errors="0">
+    <properties>
+      <property name="Run From" value="ALIPL3205" />
+      <property name="Run OS" value="amd64 Windows 11 10.0" />
+      <property name="Run User" value="al5170" />
+      <property name="Iteration" value="1 of 1" />
+      <property name="Script" value="Humanetics-wcag.xlsx" />
+      <property name="Logs" value="C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log" />
+      <property name="Data File" value="Humanetics-wcag.data.xlsx" />
+      <property name="DataSheet(s)" value="#default" />
+      <property name="runtime args" value="-script C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx" />
+    </properties>
+    <testcase id="Start Record" name="Start Record" classname="HomePage Navigation" timestamp="2023-07-03T16:42:11" time="258.706">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="Navigation" name="Navigation" classname="HomePage Navigation" timestamp="2023-07-03T16:42:13" time="256.746">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="Safety Tab" name="Safety Tab" classname="HomePage Navigation" timestamp="2023-07-03T16:42:43" time="226.009">
+      <system-out>Total : 5
+Passed: 5
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="Industry Solutions" name="Industry Solutions" classname="HomePage Navigation" timestamp="2023-07-03T16:43:54" time="155.214">
+      <system-out>Total : 7
+Passed: 7
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="AboutUs" name="AboutUs" classname="HomePage Navigation" timestamp="2023-07-03T16:45:17" time="71.943">
+      <system-out>Total : 3
+Passed: 3
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="Search Headforms" name="Search Headforms" classname="HomePage Navigation" timestamp="2023-07-03T16:45:40" time="49.142">
+      <system-out>Total : 4
+Passed: 4
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+    <testcase id="Stop Record" name="Stop Record" classname="HomePage Navigation" timestamp="2023-07-03T16:46:27" time="2.258">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+Logs  : C:\projects\Humanetics\output\20230703_164208\logs\nexial-20230703_164208.log</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

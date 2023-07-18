@@ -1,0 +1,396 @@
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) nexial-core dev_0000 starting up...
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) data file resolved as C:\Users\al5170\tmp\oamUz\Humanetics-wcag.data.xlsx
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) input files and output directory resolved...
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) cleaning up outdated temp files...
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) No predefined nexial-setup found
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) re-fetching data from C:\projects\Humanetics\artifact\data\Humanetics-wcag.data.xlsx
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) [20230703_164208] [C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx] resolve RUN ID as 20230703_164208
+2023-07-03 16:42:09.090|I|Thread-1|(DELAYED) [20230703_164208] [C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx] new thread started
+2023-07-03 16:42:09.090|I|Thread-1|No predefined nexial-setup found
+2023-07-03 16:42:09.501|I|Thread-1|outputBase not set; output-to-cloud DISABLED!
+2023-07-03 16:42:09.501|I|Thread-1|accessKey not set; output-to-cloud DISABLED!
+2023-07-03 16:42:09.501|I|Thread-1|secretKey not set; output-to-cloud DISABLED!
+2023-07-03 16:42:09.710|I|Thread-1|missing REQUIRED configuration; sms DISABLED!
+2023-07-03 16:42:10.110|I|Thread-1|On-Demand Inspection detection enabled
+2023-07-03 16:42:10.110|I|Thread-1|[20230703_164208] executing C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx with 1 iteration(s)
+2023-07-03 16:42:10.110|I|Thread-1|[20230703_164208] create directory C:\projects\Humanetics\output\20230703_164208\captures
+2023-07-03 16:42:10.110|I|Thread-1|[20230703_164208] create directory C:\projects\Humanetics\output\20230703_164208\logs
+2023-07-03 16:42:10.340|I|Thread-1|[20230703_164208] merging test data to tmp file C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+2023-07-03 16:42:10.340|I|Thread-1|re-fetching data from C:\projects\Humanetics\artifact\data\Humanetics-wcag.data.xlsx
+2023-07-03 16:42:10.591|I|Thread-1|[20230703_164208] test script and test data merged to C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+2023-07-03 16:42:11.060|I|Thread-1|STARTS
+2023-07-03 16:42:11.123|I|Thread-1|Humanetics-wcag.20230703_164210.001 - executing iteration #1 of 1; Iteration Id 1
+2023-07-03 16:42:11.130|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation - executing test scenario
+2023-07-03 16:42:11.130|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Start Record - executing activity
+2023-07-03 16:42:11.133|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Start Record|#  5|base.startRecording()     - executing startRecording()()
+2023-07-03 16:42:11.796|I|Thread-1|[ROW 5] start recording to 'C:\projects\Humanetics\output\20230703_164208\captures\Humanetics-wcag.20230703_164210.001.xlsx_HomePage_Navigation_A5.mp4'
+2023-07-03 16:42:12.773|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Start Record|#  5|base.startRecording()     - PASS desktop recording started; saved C:\projects\Humanetics\output\20230703_164208\captures\Humanetics-wcag.20230703_164210.001.xlsx_HomePage_Navigation_A5.mp4
+2023-07-03 16:42:13.090|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Start Record - ending activity
+2023-07-03 16:42:13.090|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation - executing activity
+2023-07-03 16:42:13.091|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  6|web.openAndWait(url,waitM - executing openAndWait(url,waitMs)(${URL}, ${Wait})
+2023-07-03 16:42:13.091|I|Thread-1|[chrome] initializing chrome
+2023-07-03 16:42:13.131|I|Thread-1|[chrome] enabling chrome remote port: 12209
+2023-07-03 16:42:16.093|I|Thread-1|[chrome] initializing for chrome 114.0.5735.199
+2023-07-03 16:42:16.100|I|Thread-1|[DISPLAY] Currently discovered display(s):
+2023-07-03 16:42:16.112|I|Thread-1|	1920x1080x32bpp@60Hz
+2023-07-03 16:42:16.113|I|Thread-1|[DISPLAY] adjust position to display 1920x1080x32bpp@60Hz
+2023-07-03 16:42:16.138|I|Thread-1|[DISPLAY] adjusting position within the bounds of target display: x=0,y=0,width=1280,height=720
+2023-07-03 16:42:16.141|I|Thread-1|[DISPLAY] position adjusted to (0, 0)
+2023-07-03 16:42:16.271|I|Thread-1|[chrome] browser initialization completed for 'chrome'
+2023-07-03 16:42:16.281|I|Thread-1|[chrome] setting browser page load timeout to 15000 ms
+2023-07-03 16:42:16.284|I|Thread-1|[chrome] detected nexial.web.alwaysWait; use fluent-wait (up to 1500 ms) during web automation
+2023-07-03 16:42:16.951|I|Thread-1|JsEventStartTime: 1688382736944
+2023-07-03 16:42:22.764|I|Thread-1|JsEventEndTime: 1688382742763
+2023-07-03 16:42:25.336|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  6|web.openAndWait(url,waitM - PASS opened URL https://www.humaneticsgroup.com/
+2023-07-03 16:42:30.390|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:42:41.879|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Navigation\6
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 5415
+2023-07-03 16:42:42.292|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  7|web.maximizeWindow()      - executing maximizeWindow()()
+2023-07-03 16:42:43.029|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  7|web.maximizeWindow()      - PASS browser window maximized
+2023-07-03 16:42:43.030|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  8|web.assertElementPresent( - executing assertElementPresent(locator)(${HumansTitle})
+2023-07-03 16:42:43.825|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation|#  8|web.assertElementPresent( - PASS EXPECTED element '//strong[text()='HUMANS']' found
+2023-07-03 16:42:43.826|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Navigation - ending activity
+2023-07-03 16:42:43.827|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab - executing activity
+2023-07-03 16:42:43.827|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|#  9|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SafetyLoc}, ${Wait})
+2023-07-03 16:42:44.605|I|Thread-1|clicking '(//a[@class='safety'])[1]'...
+2023-07-03 16:42:44.638|I|Thread-1|click target via JS, @id=
+2023-07-03 16:42:44.652|I|Thread-1|JsEventStartTime: 1688382764652
+2023-07-03 16:42:45.873|I|Thread-1|clicked -> true
+2023-07-03 16:42:45.873|I|Thread-1|JsEventEndTime: 1688382765873
+2023-07-03 16:42:48.892|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|#  9|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[@class='safety'])[1]'
+2023-07-03 16:42:53.903|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:43:00.226|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Safety_Tab\9
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 4787
+2023-07-03 16:43:00.304|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 10|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${THOR-5FLoc}, ${Wait})
+2023-07-03 16:43:01.065|I|Thread-1|clicking '//a[text()='Discover THOR-5F']'...
+2023-07-03 16:43:01.087|I|Thread-1|click target via JS, @id=
+2023-07-03 16:43:01.098|I|Thread-1|JsEventStartTime: 1688382781098
+2023-07-03 16:43:02.266|I|Thread-1|clicked -> true
+2023-07-03 16:43:02.267|I|Thread-1|JsEventEndTime: 1688382782266
+2023-07-03 16:43:05.184|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 10|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='Discover THOR-5F']'
+2023-07-03 16:43:10.204|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:43:19.164|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Safety_Tab\10
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 3407
+2023-07-03 16:43:19.180|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 11|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${THOR-5F-ProductPage}, ${Wait})
+2023-07-03 16:43:19.901|I|Thread-1|clicking '//a[text()='THOR-5F Product Page']'...
+2023-07-03 16:43:19.912|I|Thread-1|click target via JS, @id=
+2023-07-03 16:43:19.919|I|Thread-1|JsEventStartTime: 1688382799919
+2023-07-03 16:43:21.722|I|Thread-1|clicked -> true
+2023-07-03 16:43:21.722|I|Thread-1|JsEventEndTime: 1688382801722
+2023-07-03 16:43:21.775|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 11|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='THOR-5F Product Page']'
+2023-07-03 16:43:26.794|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:43:35.884|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Safety_Tab\11
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2991
+2023-07-03 16:43:35.899|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 12|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${GenderBiasArticle}, ${Wait})
+2023-07-03 16:43:36.604|I|Thread-1|clicking '//a[text()='Gender Bias Article']'...
+2023-07-03 16:43:36.620|I|Thread-1|click target via JS, @id=
+2023-07-03 16:43:36.624|I|Thread-1|JsEventStartTime: 1688382816624
+2023-07-03 16:43:37.574|I|Thread-1|clicked -> true
+2023-07-03 16:43:37.574|I|Thread-1|JsEventEndTime: 1688382817574
+2023-07-03 16:43:37.608|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 12|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='Gender Bias Article']'
+2023-07-03 16:43:42.615|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:43:51.789|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Safety_Tab\12
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 4113
+2023-07-03 16:43:51.796|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 13|web.assertElementPresent( - executing assertElementPresent(locator)(${GenderBiasTitle})
+2023-07-03 16:43:54.621|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab|# 13|web.assertElementPresent( - PASS EXPECTED element '//div[@class='paragraph-heading color--white text-transform--none']' found
+2023-07-03 16:43:54.622|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Safety Tab - ending activity
+2023-07-03 16:43:54.622|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions - executing activity
+2023-07-03 16:43:54.623|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 14|web.mouseOver(locator)    - executing mouseOver(locator)(${IndustryLoc})
+2023-07-03 16:43:55.442|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 14|web.mouseOver(locator)    - PASS mouse-over on '(//a[text()='Industry Solutions'])[1]'
+2023-07-03 16:44:00.465|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:44:00.487|I|Thread-1|No DOM changed for the current scope. Skipping lighthouse run.
+2023-07-03 16:44:00.487|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 15|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${AeroSpaceLoc}, ${Wait})
+2023-07-03 16:44:01.183|I|Thread-1|clicking '(//a[text()='Aerospace Safety'])[1]'...
+2023-07-03 16:44:01.194|I|Thread-1|click target via JS, @id=
+2023-07-03 16:44:01.199|I|Thread-1|JsEventStartTime: 1688382841198
+2023-07-03 16:44:02.130|I|Thread-1|clicked -> true
+2023-07-03 16:44:02.131|I|Thread-1|JsEventEndTime: 1688382842131
+2023-07-03 16:44:04.553|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 15|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[text()='Aerospace Safety'])[1]'
+2023-07-03 16:44:09.558|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:44:18.279|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Industry_Solutions\15
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2905
+2023-07-03 16:44:18.295|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 16|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${HeadFormLoc}, ${Wait})
+2023-07-03 16:44:19.032|I|Thread-1|clicking '//a[text()='FOCUS Headform']'...
+2023-07-03 16:44:19.050|I|Thread-1|click target via JS, @id=
+2023-07-03 16:44:19.057|I|Thread-1|JsEventStartTime: 1688382859056
+2023-07-03 16:44:20.040|I|Thread-1|clicked -> true
+2023-07-03 16:44:20.041|I|Thread-1|JsEventEndTime: 1688382860041
+2023-07-03 16:44:20.084|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 16|web.clickAndWait(locator, - PASS clicked-and-waited '//a[text()='FOCUS Headform']'
+2023-07-03 16:44:25.096|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:44:33.764|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Industry_Solutions\16
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2302
+2023-07-03 16:44:33.771|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 17|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${ApplicationLoc}, ${Wait})
+2023-07-03 16:44:34.473|I|Thread-1|clicking '//summary[text()='Applications']'...
+2023-07-03 16:44:34.486|I|Thread-1|click target via JS, @id=
+2023-07-03 16:44:34.490|I|Thread-1|JsEventStartTime: 1688382874490
+2023-07-03 16:44:34.505|I|Thread-1|clicked -> true
+2023-07-03 16:44:34.505|I|Thread-1|JsEventEndTime: 1688382874505
+2023-07-03 16:44:34.540|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 17|web.clickAndWait(locator, - PASS clicked-and-waited '//summary[text()='Applications']'
+2023-07-03 16:44:39.551|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:44:48.171|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Industry_Solutions\17
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2369
+2023-07-03 16:44:48.182|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 18|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${RegulationsLoc}, ${Wait})
+2023-07-03 16:44:48.888|I|Thread-1|clicking '//summary[text()='Regulations']'...
+2023-07-03 16:44:48.907|I|Thread-1|click target via JS, @id=
+2023-07-03 16:44:48.907|I|Thread-1|JsEventStartTime: 1688382888907
+2023-07-03 16:44:48.920|I|Thread-1|clicked -> true
+2023-07-03 16:44:48.921|I|Thread-1|JsEventEndTime: 1688382888921
+2023-07-03 16:44:48.940|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 18|web.clickAndWait(locator, - PASS clicked-and-waited '//summary[text()='Regulations']'
+2023-07-03 16:44:53.959|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:45:02.814|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Industry_Solutions\18
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2436
+2023-07-03 16:45:02.817|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 19|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${ResourcesLoc}, ${Wait})
+2023-07-03 16:45:03.525|I|Thread-1|clicking '//strong[text()='Resources']'...
+2023-07-03 16:45:03.538|I|Thread-1|click target via JS, @id=
+2023-07-03 16:45:03.543|I|Thread-1|JsEventStartTime: 1688382903543
+2023-07-03 16:45:03.562|I|Thread-1|clicked -> true
+2023-07-03 16:45:03.563|I|Thread-1|JsEventEndTime: 1688382903562
+2023-07-03 16:45:03.589|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 19|web.clickAndWait(locator, - PASS clicked-and-waited '//strong[text()='Resources']'
+2023-07-03 16:45:08.591|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:45:17.198|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Industry_Solutions\19
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2062
+2023-07-03 16:45:17.203|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 20|web.assertElementPresent( - executing assertElementPresent(locator)(${ProductCatalogLoc})
+2023-07-03 16:45:17.892|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions|# 20|web.assertElementPresent( - PASS EXPECTED element '(//strong[text()='Product Catalog'])[2]' found
+2023-07-03 16:45:17.893|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Industry Solutions - ending activity
+2023-07-03 16:45:17.893|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs - executing activity
+2023-07-03 16:45:17.894|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 21|web.mouseOver(locator)    - executing mouseOver(locator)(${AboutUsLoc})
+2023-07-03 16:45:18.707|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 21|web.mouseOver(locator)    - PASS mouse-over on '(//a[text()='About Us'])[1]'
+2023-07-03 16:45:23.721|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:45:23.738|I|Thread-1|No DOM changed for the current scope. Skipping lighthouse run.
+2023-07-03 16:45:23.738|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 22|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${HistoryLoc}, ${Wait})
+2023-07-03 16:45:24.438|I|Thread-1|clicking '(//a[text()='History'])[1]'...
+2023-07-03 16:45:24.450|I|Thread-1|click target via JS, @id=
+2023-07-03 16:45:24.456|I|Thread-1|JsEventStartTime: 1688382924450
+2023-07-03 16:45:25.512|I|Thread-1|clicked -> true
+2023-07-03 16:45:25.513|I|Thread-1|JsEventEndTime: 1688382925513
+2023-07-03 16:45:25.540|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 22|web.clickAndWait(locator, - PASS clicked-and-waited '(//a[text()='History'])[1]'
+2023-07-03 16:45:30.552|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:45:39.999|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\AboutUs\22
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 5781
+2023-07-03 16:45:40.009|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 23|web.assertElementPresent( - executing assertElementPresent(locator)(${HistoryTitle})
+2023-07-03 16:45:40.693|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs|# 23|web.assertElementPresent( - PASS EXPECTED element '//div[@id='paragraph-heading-370']' found
+2023-07-03 16:45:40.693|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|AboutUs - ending activity
+2023-07-03 16:45:40.694|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms - executing activity
+2023-07-03 16:45:40.694|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 24|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SearchLoc}, ${Wait})
+2023-07-03 16:45:41.389|I|Thread-1|clicking '(//button[@id='edit-submit-search'])[1]'...
+2023-07-03 16:45:41.400|I|Thread-1|click target via JS, @id=edit-submit-search
+2023-07-03 16:45:41.409|I|Thread-1|JsEventStartTime: 1688382941409
+2023-07-03 16:45:41.426|I|Thread-1|clicked -> true
+2023-07-03 16:45:41.426|I|Thread-1|JsEventEndTime: 1688382941426
+2023-07-03 16:45:41.469|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 24|web.clickAndWait(locator, - PASS clicked-and-waited '(//button[@id='edit-submit-search'])[1]'
+2023-07-03 16:45:46.489|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:45:56.039|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Search_Headforms\24
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 5781
+2023-07-03 16:45:56.053|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 25|web.type(locator,value)   - executing type(locator,value)(${SeachbarLoc}, ${Search Value})
+2023-07-03 16:45:56.828|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 25|web.type(locator,value)   - PASS typed text at '(//input[@name='sq'])[1]'
+2023-07-03 16:46:01.839|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:46:11.360|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Search_Headforms\25
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 5781
+2023-07-03 16:46:11.370|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 26|web.clickAndWait(locator, - executing clickAndWait(locator,waitMs)(${SearchLoc}, ${Wait})
+2023-07-03 16:46:12.065|I|Thread-1|clicking '(//button[@id='edit-submit-search'])[1]'...
+2023-07-03 16:46:12.096|I|Thread-1|click target via JS, @id=edit-submit-search
+2023-07-03 16:46:12.098|I|Thread-1|JsEventStartTime: 1688382972098
+2023-07-03 16:46:13.024|I|Thread-1|clicked -> true
+2023-07-03 16:46:13.024|I|Thread-1|JsEventEndTime: 1688382973024
+2023-07-03 16:46:13.069|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 26|web.clickAndWait(locator, - PASS clicked-and-waited '(//button[@id='edit-submit-search'])[1]'
+2023-07-03 16:46:18.086|I|Thread-1|Current scope for DOM change detection is : N1290122465_20230703_164208
+2023-07-03 16:46:26.876|I|Thread-1|Is only POCfalse undefined
+categories : accessibility
+outputType : html,json
+output path for report and file name initials : C:\projects\Humanetics\output\20230703_164208\accessibilityReports\Humanetics-wcag.20230703_164210.001\HomePage_Navigation\Search_Headforms\26
+ Desktop mode : true
+ mobile mode : false
+{ width: 1280, height: 720 }
+Before log...............
+Okay..................
+Viewport max height: 2707
+2023-07-03 16:46:26.876|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 27|web.assertElementPresent( - executing assertElementPresent(locator)(${SearchTitle})
+2023-07-03 16:46:27.577|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms|# 27|web.assertElementPresent( - PASS EXPECTED element '//h1[text()='Search']' found
+2023-07-03 16:46:27.577|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Search Headforms - ending activity
+2023-07-03 16:46:27.578|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Stop Record - executing activity
+2023-07-03 16:46:27.578|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Stop Record|# 28|base.stopRecording()      - executing stopRecording()()
+2023-07-03 16:46:28.181|I|Thread-1|stopping currently in-progress desktop recording...
+2023-07-03 16:46:29.186|I|Thread-1|stopping screen recording service...
+2023-07-03 16:46:29.426|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Stop Record|# 28|base.stopRecording()      - PASS previous desktop recording saved and is accessible via C:\projects\Humanetics\output\20230703_164208\captures\Humanetics-wcag.20230703_164210.001.xlsx_HomePage_Navigation_A5.mp4
+2023-07-03 16:46:29.426|I|Thread-1|Humanetics-wcag.20230703_164210.001|HomePage Navigation|Stop Record - ending activity
+2023-07-03 16:46:29.691|I|Thread-1|[Humanetics-wcag.20230703_164210.001|HomePage Navigation] saving test scenario
+2023-07-03 16:46:29.836|I|Thread-1|[20230703_164208] 
+/-ITERATION COMPLETE------------------------------------------------------------
+| Test Output:    C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+| Iteration:      1
+\-------------------------------------------------------------------------------
+» Execution Time: 258703 ms
+» Test Steps:     24
+» Error(s):       0
+
+
+
+2023-07-03 16:46:30.916|I|Thread-1|[20230703_164208] 
+/-SCRIPT COMPLETE---------------------------------------------------------------
+| Test Script:    C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx
+\-------------------------------------------------------------------------------
+» Execution Time: 261931 ms
+» Iterations:     [1] total 1
+» Test Steps:     24
+» Passed:         24
+» Error(s):       0
+» Iteration 1 of 1: C:\projects\Humanetics\output\20230703_164208\Humanetics-wcag.20230703_164210.001.xlsx
+
+
+
+2023-07-03 16:46:30.916|I|Thread-1|nexial mailer not enabled: nexial.enableEmail=false
+2023-07-03 16:46:31.023|I|main|[20230703_164208] [C:\projects\Humanetics\artifact\script\Humanetics-wcag.xlsx] now completed
+2023-07-03 16:46:31.023|I|main|[20230703_164208] all execution thread(s) have terminated
+2023-07-03 16:46:31.023|I|main|[20230703_164208] test run completed in about 262 seconds
+2023-07-03 16:46:31.106|I|main|No predefined nexial-setup found
+2023-07-03 16:46:31.136|I|main|outputBase not set; output-to-cloud DISABLED!
+2023-07-03 16:46:31.136|I|main|accessKey not set; output-to-cloud DISABLED!
+2023-07-03 16:46:31.136|I|main|secretKey not set; output-to-cloud DISABLED!
+2023-07-03 16:46:31.136|I|main|generating HTML output for this execution to C:\projects\Humanetics\output\20230703_164208\execution-output.html
+2023-07-03 16:46:32.216|I|main|generating JUnit XML output for this execution to C:\projects\Humanetics\output\20230703_164208\junit.xml
+2023-07-03 16:46:32.271|I|main|generated the JUnit report for this execution: C:\projects\Humanetics\output\20230703_164208\junit.xml
+2023-07-03 16:46:32.286|I|main|Quantitative metrics enabled 
+2023-07-03 16:46:35.192|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\img
+2023-07-03 16:46:35.192|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\img\accionlabs-logo.f4f8aee8.png
+2023-07-03 16:46:35.209|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\img\earth.3f7d4abb.jpg
+2023-07-03 16:46:35.209|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\index.html
+2023-07-03 16:46:35.216|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\js
+2023-07-03 16:46:35.216|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\js\chunk-vendors.0f47f2c1.js
+2023-07-03 16:46:35.231|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\js\index.0f9715b2.js
+2023-07-03 16:46:35.231|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\js\chunk-vendors.0f47f2c1.js.map
+2023-07-03 16:46:35.256|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\js\index.0f9715b2.js.map
+2023-07-03 16:46:35.266|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\css
+2023-07-03 16:46:35.266|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\css\index.9b363a0b.css
+2023-07-03 16:46:35.271|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\css\chunk-vendors.bf9c05a4.css
+2023-07-03 16:46:35.277|I|main|[C:\Users\al5170\tmp\quantitativeMetrics.zip]: Unzipping to C:\projects\Humanetics\output\20230703_164208\quantitative-user-metrics\favicon_accion.ico
+2023-07-03 16:46:35.436|I|main|nexial mailer not enabled: nexial.enableEmail=false
+2023-07-03 16:46:35.436|I|main|skipped email notification as configured
+2023-07-03 16:46:35.436|I|main|exiting current script/plan execution
+2023-07-03 16:46:35.436|I|main|exiting Nexial...
+2023-07-03 16:46:35.446|I|main|shutdown starts...
+2023-07-03 16:46:35.446|I|main|stopping screen recording service...
+2023-07-03 16:46:35.446|I|main|[chrome] Shutting down webdriver...
+2023-07-03 16:46:35.447|I|main|[chrome] Close the current window...
+2023-07-03 16:46:35.580|I|main|[chrome] Quit this driver, closing every associated window.
+2023-07-03 16:46:36.730|I|main|shutdown ends...
+2023-07-03 16:46:36.736|I|main|
+
+/-END OF EXECUTION--------------------------------------------------------------
+| » Execution Time: 262 sec.
+| » Test Steps....: 24
+| » Passed........: 24
+| » Failed........: 0
+| » Success Rate..: 100.00%
+\----------------------------------------------------------nexial-core dev_0000-
+
+2023-07-03 16:46:36.736|I|main|ALL PASSED!
+2023-07-03 16:46:36.747|I|main|End of Execution:
+NEXIAL_OUTPUT:         C:\projects\Humanetics\output\20230703_164208
+NEXIAL_EXECUTION_HTML: C:\projects\Humanetics\output\20230703_164208\execution-output.html
+NEXIAL_JUNIT_XML:      C:\projects\Humanetics\output\20230703_164208\junit.xml
+NEXIAL_SUCCESS_RATE:   100.00%
+NEXIAL_EXIT_STATUS:    0

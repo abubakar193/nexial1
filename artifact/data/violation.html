@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>మీ పేరు రాయండి please write your name </title>
+</head>
+
+<body>
+    <h1>Violation Example</h1>
+
+    <h1>Popup Examples</h1>
+
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+
+    <!-- Title violation -->
+    <h2>This is a title that needs to be అనువదించాలి</h2>
+
+    <!-- Placeholder violation -->
+    <input type="text" placeholder="మీ పేరు రాయండి">
+
+    <!-- Tooltip violation -->
+    <button title="క్లిక్ చేయండి">Button</button>
+
+    <!-- Alt violation -->
+    <br>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJ8_eT6ZoOJdjkCGxlZ4ZRJAx6u_GN9q66pqgJd6t&s"
+        alt="క్లిక్ చేయండి">
+    </br>
+    <!-- Aria-label violation -->
+    <div role="button" aria-labe="అరియా-లేబుల్">నెక్సియల్</div>
+
+    <!-- Text in paragraph violation -->
+    <p>This is some text that needs to be translated.</p>
+    <input type="text" aria-label="పేరు" placeholder="Name">
+
+    <div role="alert" aria-label="అరియా-లేబుల్">చెల్లని ఇన్‌పుట్!</div>
+
+    <script>
+        function showAlert() {
+            alert("హలో, ప్రపంచం!");
+        }
+        function showConfirm() {
+            var result = confirm("Are you sure?");
+            if (result == true) {
+                alert("You clicked OK!");
+            } else {
+                alert("మీరు రద్దు చేయి క్లిక్ చేసారు!");
+            }
+        }
+        function showPrompt() {
+            var name = prompt("మీ పేరు ఏమిటి?");
+            if (name != null) {
+                alert("Hello, " + name + "!");
+            }
+        }
+    </script>
+</body>
+
+</html>
